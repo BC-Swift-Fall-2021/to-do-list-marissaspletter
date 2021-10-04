@@ -34,13 +34,18 @@ class ToDoDetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //set up foreground notification
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appActiveNotification), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        nameField.delegate = self
+    
         
         // hide keyboard if we tap outside of a field
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
+        
+        nameField.delegate = self
         
         //edit
         if toDoItem == nil {
@@ -51,6 +56,10 @@ class ToDoDetailTableViewController: UITableViewController {
             //nameField.becomeFirstResponder()
 
 }
+    
+    @objc func appActiveNotification() {
+        print("😮 The app just came to the foreground - cool!")
+        updateReminderSwitch()
     
     func updateUserInterface() {
         
@@ -104,8 +113,7 @@ class ToDoDetailTableViewController: UITableViewController {
     
     @IBAction func reminderSwitchChanged(_ sender: UISwitch) {
         updateReminderSwitch()
-        
-    }
+        }
     
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {
