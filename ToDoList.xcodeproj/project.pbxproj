@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53171DE2270A267200E6E186 /* ToDoItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53171DE1270A267200E6E186 /* ToDoItems.swift */; };
+		53171DE4270A56C900E6E186 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53171DE3270A56C900E6E186 /* LocalNotificationManager.swift */; };
+		53171DE6270A8BE000E6E186 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53171DE5270A8BE000E6E186 /* UIViewController+Alert.swift */; };
 		53345AF02700D15300F62634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53345AEF2700D15300F62634 /* AppDelegate.swift */; };
 		53345AF22700D15300F62634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53345AF12700D15300F62634 /* SceneDelegate.swift */; };
 		53345AF42700D15300F62634 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53345AF32700D15300F62634 /* ToDoListViewController.swift */; };
@@ -16,6 +19,7 @@
 		53345B072700D15500F62634 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53345B062700D15500F62634 /* ToDoListTests.swift */; };
 		53345B112700D15500F62634 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53345B102700D15500F62634 /* ToDoListUITests.swift */; };
 		53345B132700D15500F62634 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53345B122700D15500F62634 /* ToDoListUITestsLaunchTests.swift */; };
+		539CDAC02705040B005173C9 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539CDABF2705040B005173C9 /* ListTableViewCell.swift */; };
 		53DF21A127016D88009EFC3A /* ToDoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF21A027016D88009EFC3A /* ToDoDetailTableViewController.swift */; };
 		53DF21E1270244D1009EFC3A /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF21E0270244D1009EFC3A /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53171DE1270A267200E6E186 /* ToDoItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItems.swift; sourceTree = "<group>"; };
+		53171DE3270A56C900E6E186 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		53171DE5270A8BE000E6E186 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		53345AEC2700D15300F62634 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53345AEF2700D15300F62634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53345AF12700D15300F62634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		53345B0C2700D15500F62634 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53345B102700D15500F62634 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		53345B122700D15500F62634 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		539CDABF2705040B005173C9 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		53DF21A027016D88009EFC3A /* ToDoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailTableViewController.swift; sourceTree = "<group>"; };
 		53DF21E0270244D1009EFC3A /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +113,13 @@
 			children = (
 				53345AEF2700D15300F62634 /* AppDelegate.swift */,
 				53345AF12700D15300F62634 /* SceneDelegate.swift */,
+				53171DE3270A56C900E6E186 /* LocalNotificationManager.swift */,
+				53171DE5270A8BE000E6E186 /* UIViewController+Alert.swift */,
 				53DF21E0270244D1009EFC3A /* ToDoItem.swift */,
+				53171DE1270A267200E6E186 /* ToDoItems.swift */,
 				53345AF32700D15300F62634 /* ToDoListViewController.swift */,
 				53DF21A027016D88009EFC3A /* ToDoDetailTableViewController.swift */,
+				539CDABF2705040B005173C9 /* ListTableViewCell.swift */,
 				53345AF52700D15300F62634 /* Main.storyboard */,
 				53345AF82700D15500F62634 /* Assets.xcassets */,
 				53345AFA2700D15500F62634 /* LaunchScreen.storyboard */,
@@ -267,11 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53171DE6270A8BE000E6E186 /* UIViewController+Alert.swift in Sources */,
 				53345AF42700D15300F62634 /* ToDoListViewController.swift in Sources */,
+				53171DE2270A267200E6E186 /* ToDoItems.swift in Sources */,
 				53345AF02700D15300F62634 /* AppDelegate.swift in Sources */,
 				53DF21E1270244D1009EFC3A /* ToDoItem.swift in Sources */,
 				53DF21A127016D88009EFC3A /* ToDoDetailTableViewController.swift in Sources */,
 				53345AF22700D15300F62634 /* SceneDelegate.swift in Sources */,
+				53171DE4270A56C900E6E186 /* LocalNotificationManager.swift in Sources */,
+				539CDAC02705040B005173C9 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3RVKX5M6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -477,6 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3RVKX5M6Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
